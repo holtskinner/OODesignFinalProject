@@ -3,8 +3,8 @@
 
 CS 4330 Spring 2017
 
-Java 
+Java
 <img src="JavaLogo.png" alt="Java" width="50">
 
-Swift <img src="SwiftLogo.png" alt="Swift" width="50">
-
+Swift
+<img src="SwiftLogo.png" alt="Swift" width="50">
