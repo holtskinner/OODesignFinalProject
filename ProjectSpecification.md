@@ -63,7 +63,7 @@ GitHub public repository that the team uses.
   * Which does the language use? (null/nil/etc)
   * Does the language have features for handling null/nil references?
 - [ ] Errors and exception handling
-- [ ]Lambda expressions, closures, or functions as types
+- [ ] Lambda expressions, closures, or functions as types
 - [ ] Implementation of listeners and event handlers
 - [ ] Singleton
   * How is a singleton implemented?
