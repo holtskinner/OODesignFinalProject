@@ -27,8 +27,12 @@ GitHub public repository that the team uses.
   
 - [ ] Unique features of the language
   * Does the language have any particularly unique features?
+<<<<<<< HEAD
 
 - [ ] Name spaces
+=======
+- [ ] Name spaces ♿️
+>>>>>>> 9793bd42849ca057120d0222f0097f331f583073
   * How are name spaces implemented?
   * How are name spaces used?
 
