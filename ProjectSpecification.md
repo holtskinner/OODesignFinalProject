@@ -26,7 +26,7 @@ GitHub public repository that the team uses.
   * Is the language a reaction to a previous language or a replacement for another language?
 - [X] Unique features of the language
   * Does the language have any particularly unique features?
-- [ ] Name spaces
+- [ ] Name spaces ♿️
   * How are name spaces implemented?
   * How are name spaces used?
 - [ ] Types
