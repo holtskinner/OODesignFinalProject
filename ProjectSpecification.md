@@ -1,3 +1,5 @@
+# Project Specification
+
 ## OO Language Comparison
 
 * Pick two object-oriented languages.
@@ -25,7 +27,7 @@ GitHub public repository that the team uses.
   * What problems was the language trying to address?
   * Is the language a reaction to a previous language or a replacement for another language?
   
-- [ ] Unique features of the language
+- [ ] Unique features of the language 🤓
   * Does the language have any particularly unique features?
 
 - [ ] Name spaces ♿️
@@ -43,7 +45,7 @@ GitHub public repository that the team uses.
   * Constructing/initializing
   * Destructing/de-initializing
 
-- [ ] Instance reference name in data type (class)
+- [ ] Instance reference name in data type (class) 
   * this?  self?
 
 - [ ] Properties
@@ -58,7 +60,7 @@ GitHub public repository that the team uses.
 
 - [ ] Inheritance / extension
 
-- [ ] Reflection
+- [ ] Reflection 🤓
   * What reflection abilities are supported?
   * How is reflection used?
 
@@ -68,29 +70,30 @@ GitHub public repository that the team uses.
   * Garbage collection?
   * Automatic reference counting?
 
-- [ ] Comparisons of references and values
+- [ ] Comparisons of references and values 🤓
   * How are values compared? (i.e. comparing two strings)
 
-- [ ] Null/nil references
+- [ ] Null/nil references 🤓
   * Which does the language use? (null/nil/etc)
   * Does the language have features for handling null/nil references?
 
 - [ ] Errors and exception handling
 
-- [ ] Lambda expressions, closures, or functions as types
+- [ ] Lambda expressions, closures, or functions as types 🤓
 
 - [ ] Implementation of listeners and event handlers
 
-- [ ] Singleton
+- [ ] Singleton 🤓
   * How is a singleton implemented?
   * Can it be made thread-safe?
   * Can the singleton instance be lazily instantiated?
 
-- [ ] Procedural programming
+- [ ] Procedural programming 🤓
   * Does the language support procedural programming?
 
 - [ ] Functional programming
   * Does the language support functional programming?
-- [ ] Multithreading
+
+- [ ] Multithreading 🤓
   * Threads or thread-like abilities
   * How is multitasking accomplished?
