@@ -77,8 +77,6 @@
 
 - [ ] Errors and exception handling
 
-- [ ] Lambda expressions, closures, or functions as types 🤓
-
 - [ ] Implementation of listeners and event handlers
 
 - [ ] Singleton 🤓
@@ -89,8 +87,9 @@
 - [ ] Procedural programming 🤓
   * Does the language support procedural programming?
 
-- [ ] Functional programming
+- [ ] Functional programming 🤓
   * Does the language support functional programming?
+  * Lambda expressions, closures, or functions as types
 
 - [ ] Multithreading 🤓
   * Threads or thread-like abilities

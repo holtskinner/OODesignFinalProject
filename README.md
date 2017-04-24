@@ -10,10 +10,11 @@ Swift
 <img src="SwiftLogo.png" alt="Swift" width="50">
 
 ## Intro
-> Here is an indepth analysis of Java and Swiftd dshjbcajhsdkbfh vkadfhvksdfuhkvuhfdvkdfsuhvskfudkvufdkvzusdkhvkfdsuvuhfdsvlsuhviuyvslkhuivuldy vfuy gsvugksbvyuystvbubvoabtiybadvuybvayvglauyvysgyfbds
 
+> An in-depth analysis of Java and Swift.
 
-## Language purpose/genesis 🤓
+## Language Purpose & Origins
+🤓
 
 ```swift
 print("Hello World!")
@@ -22,3 +23,12 @@ print("Hello World!")
 ```java
 System.out.println("Hello World!");
 ```
+
+## Functional Programming
+
+
+
+## Sources
+
+[Java Documentation](https://docs.oracle.com/javase/8/)
+[Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
