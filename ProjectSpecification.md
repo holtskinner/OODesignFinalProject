@@ -32,31 +32,31 @@
   * How are name spaces implemented?
   * How are name spaces used?
 
-- [ ] Types
+- [ ] Types ️ ️♿️
     * What types does the language support?
     * Are both reference and value types supported?
     * Can new value types be created?
 
-- [ ] Classes
+- [ ] Classes ♿️
   * Defining
   * Creating new instances
   * Constructing/initializing
   * Destructing/de-initializing
 
-- [ ] Instance reference name in data type (class) 
+- [ ] Instance reference name in data type (class) ♿️
   * this?  self?
 
-- [ ] Properties
+- [ ] Properties ♿️
   * Getters and setters...write your own or built in?
   * Backing variables?
   * Computed properties?
 
-- [ ] Interfaces / protocols
+- [ ] Interfaces / protocols ♿️
   * What does the language support?
   * What abilities does it have?
   * How is it used?
 
-- [ ] Inheritance / extension
+- [ ] Inheritance / extension ♿️
 
 - [ ] Reflection 🤓
   * What reflection abilities are supported?
@@ -75,9 +75,9 @@
   * Which does the language use? (null/nil/etc)
   * Does the language have features for handling null/nil references?
 
-- [ ] Errors and exception handling
+- [ ] Errors and exception handling ♿️
 
-- [ ] Implementation of listeners and event handlers
+- [ ] Implementation of listeners and event handlers ♿️
 
 - [ ] Singleton 🤓
   * How is a singleton implemented?
@@ -87,7 +87,7 @@
 - [ ] Procedural programming 🤓
   * Does the language support procedural programming?
 
-- [ ] Functional programming 🤓
+- [ ] Functional programming ♿️
   * Does the language support functional programming?
   * Lambda expressions, closures, or functions as types
 
