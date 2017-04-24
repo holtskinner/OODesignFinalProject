@@ -24,9 +24,32 @@ print("Hello World!")
 System.out.println("Hello World!");
 ```
 
+## Unique Features
+🤓
+
+## Reflection
+🤓
+
+## Memory Management
+🤓
+
+## Comparison of Values and References
+🤓
+
+## Null/nil References
+🤓
+
+## Singleton
+🤓
+
+## Procedural Programming
+🤓
+
 ## Functional Programming
+♿️
 
-
+## Threads
+🤓
 
 ## Sources
 
