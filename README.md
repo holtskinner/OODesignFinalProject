@@ -11,6 +11,8 @@ Swift
 
 ## Language purpose/genesis 🤓
 
+> Here is an indepth analysis of Java and Swift
+
 *Description*
 
 ```swift
