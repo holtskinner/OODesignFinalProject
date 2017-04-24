@@ -9,11 +9,11 @@ Java
 Swift
 <img src="SwiftLogo.png" alt="Swift" width="50">
 
+## Intro
+> Here is an indepth analysis of Java and Swiftd dshjbcajhsdkbfh vkadfhvksdfuhkvuhfdvkdfsuhvskfudkvufdkvzusdkhvkfdsuvuhfdsvlsuhviuyvslkhuivuldy vfuy gsvugksbvyuystvbubvoabtiybadvuybvayvglauyvysgyfbds
+
+
 ## Language purpose/genesis 🤓
-
-> Here is an indepth analysis of Java and Swift
-
-*Description*
 
 ```swift
 print("Hello World!")
