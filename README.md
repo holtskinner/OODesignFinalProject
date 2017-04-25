@@ -54,6 +54,8 @@ Similar to Java, Swift's primarily goal was to greatly simplify the software eng
 
 
 > A Simple "Hello World" program in Swift.
+> Notice how this program is 14 characters fewer than the Java example.
+
 ```swift
 print("Hello World!")
 ```
