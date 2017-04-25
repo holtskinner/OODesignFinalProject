@@ -19,7 +19,7 @@ Swift
 ### Java
 
 #### Early History
-The Java programming language (not to be confused with *JavaScript*) was first released in 1995 by Sun Microsystems. The project was started in 1990 as a response to *C* and *C++*. Programmers were becoming frustrated by the tedious tasks required by the language, such as memory management and incompatability between operating systems. The goal was to create a virtual machine and language that was similar to C, but much simpler to program in. Jasmes Gosling was chosen as the lead architect for the team of only 13 people, soon known as *The Green Team.* [^1] The name *Java* was chosen after the Indonesian island Java, and the slang term for coffee. ☕️ [^2]
+The Java programming language (not to be confused with *JavaScript*) was first released in 1995 by Sun Microsystems. The project was started in 1990 as a response to C and C++. Programmers were becoming frustrated by the tedious tasks required by the language, such as memory management and incompatability between operating systems. The goal was to create a virtual machine and language that was similar to C, but much simpler to program in. Jasmes Gosling was chosen as the lead architect for the team of only 13 people, soon known as *The Green Team.* [^1] The name *Java* was chosen after the Indonesian island Java, and the slang term for coffee. ☕️ [^2]
 
 #### Philosophy
 There were 5 primary goals in mind when creating Java.
@@ -37,6 +37,21 @@ System.out.println("Hello World!");
 ```
 
 ### Swift
+
+#### Early History
+The Swift programming language (not to be confused with [*Taylor Swift*](https://en.wikipedia.org/wiki/Taylor_Swift)) began development in July 2010 under the direction of Chris Lattner at Apple. Swift was designed as a replacement for Objective-C, to be used as the primary language for iOS and macOS development. Swift took language ideas "from Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list." [^4] Although not officially stated, it is quite apparent that many ideas were borrowed from Java as well. Swift was unveiled by Craig Federighi at WWDC 2014; it was described as "Objective-C without the baggage of C."
+
+[![Apple WWDC 2014 - Swift Introduction](https://img.youtube.com/vi/MO7Ta0DvEWA/0.jpg)](https://youtu.be/MO7Ta0DvEWA)
+
+#### Philosophy
+Similar to Java, Swift's primarily goal was to greatly simplify the software engineering process. Many of the minor adjustments include:
+- No semicolons required `;`
+- No header files
+- Type inference
+- Functions are first class citizens
+- C-style enumeration `for (int i = 0; i < size; i++)` is not allowed.
+- Null pointer exceptions are not possible via the use of optionals (see below)
+
 
 
 ```swift
@@ -79,6 +94,8 @@ print("Hello World!")
 [^2]: http://www.javaworld.com/article/2077265/core-java/so-why-did-they-decide-to-call-it-java-.html
 
 [^3]: http://www.freejavaguide.com/history.html
+
+[^4]: http://nondot.org/sabre/
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
