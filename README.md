@@ -44,7 +44,7 @@ The Swift programming language (not to be confused with [*Taylor Swift*](https:/
 [![Apple WWDC 2014 - Swift Introduction](https://img.youtube.com/vi/MO7Ta0DvEWA/0.jpg)](https://youtu.be/MO7Ta0DvEWA)
 
 #### Philosophy
-Similar to Java, Swift's primarily goal was to greatly simplify the software engineering process. Many of the minor adjustments include:
+Similar to Java, Swift's primarily goal was to greatly simplify the software engineering process. Some of the minor adjustments include:
 - No semicolons required `;`
 - No header files
 - Type inference
@@ -53,12 +53,10 @@ Similar to Java, Swift's primarily goal was to greatly simplify the software eng
 - Null pointer exceptions are not possible via the use of optionals (see below)
 
 
-
+> A Simple "Hello World" program in Swift.
 ```swift
 print("Hello World!")
 ```
-
-
 
 ## Unique Features
 🤓
