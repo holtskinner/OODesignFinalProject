@@ -46,11 +46,12 @@ The Swift programming language (not to be confused with [*Taylor Swift*](https:/
 #### Philosophy
 Similar to Java, Swift's primarily goal was to greatly simplify the software engineering process. Some of the minor adjustments include:
 - No semicolons required `;`
-- No header files
+- No header files to manage
 - Type inference
-- Functions are first class citizens
-- C-style enumeration `for (int i = 0; i < size; i++)` is not allowed.
+- Functions are first class citizens.
 - Null pointer exceptions are not possible via the use of optionals (see below)
+- C-style enumeration `for (int i = 0; i < size; i++)` is not allowed. [^5]
+
 
 
 > A Simple "Hello World" program in Swift.
@@ -96,6 +97,8 @@ print("Hello World!")
 [^3]: http://www.freejavaguide.com/history.html
 
 [^4]: http://nondot.org/sabre/
+
+[^5]: https://en.wikipedia.org/wiki/Swift_(programming_language)
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
