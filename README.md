@@ -19,7 +19,7 @@ Swift
 ### Java
 
 #### Early History
-The Java programming language (not to be confused with *JavaScript*) was first released in 1995 by Sun Microsystems. The project was started in 1990 as a response to *C* and *C++*. Programmers were becoming frustrated by the tedious tasks required by the language, such as memory management and incompatability between operating systems. The goal was to create a virtual machine and language that was similar to C, but much simpler to program in. Jasmes Gosling was chosen as the lead architect for the team of only 13 people, soon known as *The Green Team.* [^1] The name *Java* was chosen after the Indonesian island Java, and the slang term for coffee. ☕️ [2]
+The Java programming language (not to be confused with *JavaScript*) was first released in 1995 by Sun Microsystems. The project was started in 1990 as a response to *C* and *C++*. Programmers were becoming frustrated by the tedious tasks required by the language, such as memory management and incompatability between operating systems. The goal was to create a virtual machine and language that was similar to C, but much simpler to program in. Jasmes Gosling was chosen as the lead architect for the team of only 13 people, soon known as *The Green Team.* [^1] The name *Java* was chosen after the Indonesian island Java, and the slang term for coffee. ☕️ [^2]
 
 #### Philosophy
 There were 5 primary goals in mind when creating Java.
@@ -28,7 +28,7 @@ There were 5 primary goals in mind when creating Java.
 3. It should contain built-in support for using computer networks.
 4. It should be designed to execute code from remote sources securely.
 5. It should be easy to use by selecting what was considered the good parts of other object-oriented languages.
-   [3]
+   [^3]
 
 > A Simple "Hello World" program in Java.
 
