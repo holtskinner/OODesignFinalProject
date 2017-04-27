@@ -40,10 +40,8 @@ System.out.println("Hello World!");
 
 #### Early History
 The Swift programming language (not to be confused with [*Taylor Swift*](https://en.wikipedia.org/wiki/Taylor_Swift)) began development in July 2010 under the direction of Chris Lattner at Apple. Swift was designed as a replacement for Objective-C, to be used as the primary language for iOS and macOS development. Swift took language ideas "from Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list." [^4] Although not officially stated, it is quite apparent that many ideas were borrowed from Java as well. Swift was unveiled by Craig Federighi at WWDC 2014; it was described as "Objective-C without the baggage of C."
-<!--
+
 [![Apple WWDC 2014 - Swift Introduction](https://img.youtube.com/vi/MO7Ta0DvEWA/0.jpg)](https://youtu.be/MO7Ta0DvEWA)
--->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MO7Ta0DvEWA" frameborder="0" allowfullscreen></iframe>
 
 #### Philosophy
 Similar to Java, Swift's primarily goal was to greatly simplify the software engineering process. Some of the minor adjustments include:
