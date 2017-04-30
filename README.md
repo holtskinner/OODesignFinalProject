@@ -142,7 +142,7 @@ Many of the other features of Swift are modeled after popular programming langua
 
 [^6]: https://www.youtube.com/watch?v=AzesJrOcFDU
 
-[^7]: (https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11)
+[^7]: https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
