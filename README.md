@@ -52,8 +52,6 @@ Similar to Java, Swift's primarily goal was to greatly simplify the software eng
 - Null pointer exceptions are not possible via the use of optionals (see below)
 - C-style enumeration `for (int i = 0; i < size; i++)` is not allowed. [^5]
 
-
-
 > A Simple "Hello World" program in Swift.
 > Notice how this program is 14 characters fewer than the Java example.
 
@@ -63,6 +61,48 @@ print("Hello World!")
 
 ## Unique Features
 🤓
+
+### Java
+
+Many of the "unique" features of Java have been encorporated into other languages as the field has progressed. The initial selling point was that Java code is platform independant due to the existance of the Java Virtual Machine (JVM). Code could be written and compiled for the JVM, and the compiled byte codes could be used on any machine with the JVM installed. In addition, other languages such as Clojure, Groovy ☮️ and Scala were written to run on the JVM.
+
+### Swift
+
+The most notable unique feature of Swift is the notion of an "Optional" denoted by `?` An optional prevents the common programming error of a "Null Pointer Exception" by "wrapping up" values that can potentially hold a nil reference. These optional values must be "unwrapped" using the `if let` construct. This is conceptually similar to the idea of dereferencing a pointer in `C/C++`.
+
+> An example of Optionals [^6]
+```swift
+// A Swift Dictionary
+let ages = ["Mohsen": 17, "Amy": 40, "Graham": 5]
+
+// Defining a constant, possibleAge, of type Int Optional
+let possibleAge: Int? = ages["Daryl"]
+
+// Unwrapping the Optional
+if let age = possibleAge {
+    // This line will only run if age != nil
+    print("An age of \(age) was found.")
+}
+
+```
+
+> Another Example of Optionals [^7]
+
+```swift
+var optionalString: String? = "Hello"
+
+print(optionalString == nil)
+ 
+var optionalName: String? = "John Appleseed"
+
+var greeting = "Hello!"
+
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
+```
+
+Many of the other features of Swift are modeled after popular programming languages. [10 features Apple 'stole' for Swift](http://www.infoworld.com/article/2606431/application-development/155797-10-prominent-features-stolen-by-Apple-s-Swift-and-where-they-came-fro.html)
 
 ## Reflection
 🤓
@@ -99,6 +139,10 @@ print("Hello World!")
 [^4]: http://nondot.org/sabre/
 
 [^5]: https://en.wikipedia.org/wiki/Swift_(programming_language)
+
+[^6]: https://www.youtube.com/watch?v=AzesJrOcFDU
+
+[^7]: (https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11)
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
