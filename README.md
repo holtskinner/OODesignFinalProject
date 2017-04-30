@@ -9,7 +9,7 @@ Java
 Swift
 <img src="SwiftLogo.png" alt="Swift" width="50">
 
-
+> Computer Science is about as close to magic you can get, if you're smart enough. ~ Dale Musser
 
 >  An analysis of Java and Swift based on Object-Oriented Design Principles.
 
@@ -107,6 +107,24 @@ Many of the other features of Swift are modeled after popular programming langua
 ## Reflection
 🤓
 
+[Background Information](http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful)
+
+### Java
+Reflection in Java is provided via the reflect library. It allows the ability to dynamically inspect the abilities of a class at runtime.
+
+> Greatly simplified Reflection example (Credit to Dale Musser)
+
+```java
+import java.lang.reflect
+
+Class dogClass = Dog.class;
+```
+
+### Swift
+
+As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in the Swift Standard Library provides some of the functionality. [^8] Other libraries have been created to imitate this functionality, and some "hacks" can be made to work with Objective-C backwards compatability.
+[StackOverflow](http://stackoverflow.com/questions/24060667/does-swift-support-reflection)
+
 ## Memory Management
 🤓
 
@@ -144,6 +162,7 @@ Many of the other features of Swift are modeled after popular programming langua
 
 [^7]: https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11
 
+[^8]: https://developer.apple.com/reference/swift/mirror
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
 [Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
