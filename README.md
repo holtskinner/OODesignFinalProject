@@ -3,15 +3,16 @@
 
 *CS 4330 Spring 2017*
 
+>  An analysis of Java and Swift based on Object-Oriented Design Principles.
+
 Java
 <img src="JavaLogo.png" alt="Java" width="50">
 
 Swift
 <img src="SwiftLogo.png" alt="Swift" width="50">
 
-> Computer Science is about as close to magic you can get, if you're smart enough. ~ Dale Musser
-
->  An analysis of Java and Swift based on Object-Oriented Design Principles.
+> Computer Science is about as close to magic you can get, if you're smart enough.  
+> ~ Dale Musser
 
 ## Language Purpose & Origins
 🤓
@@ -28,7 +29,7 @@ There were 5 primary goals in mind when creating Java.
 3. It should contain built-in support for using computer networks.
 4. It should be designed to execute code from remote sources securely.
 5. It should be easy to use by selecting what was considered the good parts of other object-oriented languages.
-   [^3]
+ [^3]
 
 > A Simple "Hello World" program in Java.
 
