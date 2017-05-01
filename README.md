@@ -29,7 +29,7 @@ There were 5 primary goals in mind when creating Java.
 3. It should contain built-in support for using computer networks.
 4. It should be designed to execute code from remote sources securely.
 5. It should be easy to use by selecting what was considered the good parts of other object-oriented languages.
- [^3]
+   [^3]
 
 > A Simple "Hello World" program in Java.
 
@@ -129,14 +129,48 @@ As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in th
 ## Memory Management
 🤓
 
+
+
+### Java
+
+Garbage collection
+
+
+
+### Swift
+
+Auto Reference Counting
+
+
+
 ## Comparison of Values and References
 🤓
+
+### Java
+
+`==` compares if two objects are the same. `.equals()` compares value
+
+
+
+### Swift
+
+`==` can be redefined to compare values.
 
 ## Null/nil References
 🤓
 
+### Java
+
+`null`
+
+### Swift
+
+`nil`
+
 ## Singleton
 🤓
+
+
 
 ## Procedural Programming
 🤓
@@ -146,6 +180,10 @@ As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in th
 
 ## Threads
 🤓
+
+### Java
+
+`Platform.runLater();`
 
 ## Sources
 
@@ -164,6 +202,7 @@ As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in th
 [^7]: https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11
 
 [^8]: https://developer.apple.com/reference/swift/mirror
+
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
 [Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
