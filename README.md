@@ -72,6 +72,7 @@ Many of the "unique" features of Java have been encorporated into other language
 The most notable unique feature of Swift is the notion of an "Optional" denoted by `?` An optional prevents the common programming error of a "Null Pointer Exception" by "wrapping up" values that can potentially hold a nil reference. These optional values must be "unwrapped" using the `if let` construct. This is conceptually similar to the idea of dereferencing a pointer in `C/C++`.
 
 > An example of Optionals [^6]
+
 ```swift
 // A Swift Dictionary
 let ages = ["Mohsen": 17, "Amy": 40, "Graham": 5]
