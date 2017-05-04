@@ -130,12 +130,11 @@ As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in th
 ## Memory Management
 🤓
 
-
-
 ### Java
 
-Garbage collection
+[Garbage Collection Description](https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/)
 
+Java's method of managing unused memory is called "Garbage Collection." The basic idea is the Garbage Collector keeps track of the amount of references for each object. When the last reference to an object is unused, the garbage collector frees the memory.
 
 
 ### Swift
