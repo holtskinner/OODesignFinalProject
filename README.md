@@ -106,7 +106,7 @@ if let name = optionalName {
 
 Many of the other features of Swift are modeled after popular programming languages. [10 features Apple 'stole' for Swift](http://www.infoworld.com/article/2606431/application-development/155797-10-prominent-features-stolen-by-Apple-s-Swift-and-where-they-came-fro.html)
 
-## Reflection ⚗️
+## Reflection 🔮
 🤓
 
 [Background Information](http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful)
@@ -215,7 +215,6 @@ println("\(x.data), \(y.data)")	// prints "42, 42"
 
 ```
 
-
 ## Null/nil References ⛔️
 🤓
 
@@ -234,7 +233,7 @@ var x: Int = nil // This is invalid
 var y: Int? = nil // This is valid
 ```
 
-## Singleton :shipit:
+## Singleton :squirrel:
 🤓
 
 ### Java
@@ -285,7 +284,7 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 
 [More information on design patterns in Swift](https://github.com/ochococo/Design-Patterns-In-Swift)
 
-## Functional Programming
+## Functional Programming ⚗️
 ♿️
 
 ## Threads 🕸
