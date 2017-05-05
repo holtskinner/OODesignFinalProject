@@ -239,7 +239,40 @@ var y: Int? = nil // This is valid
 ## Singleton
 🤓
 
+### Java
 
+The Java Standard for Singletons has been based around (Crazy) Bob Lee's paradigm of a Lazy-Loaded, Thread-safe Singleton.
+
+```java
+public class Something {
+    private Something() {}
+
+    private static class LazyHolder {
+        static final Something INSTANCE = new Something();
+    }
+
+    public static Something getInstance() {
+        return LazyHolder.INSTANCE;
+    }
+}
+```
+
+[Initialization-on-demand holder idiom] (https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom)
+
+[Crazy Bob Lee] (http://blog.crazybob.org/2007/01/lazy-loading-singletons.html)
+
+### Swift
+
+To make lazy instantiation easier for developers, Swift has the `lazy` keyword. Singletons are also incredibly simple to instanciate.
+
+```swift
+class TheOneAndOnlyKraken {
+    static lazy let sharedInstance = TheOneAndOnlyKraken()
+    private init() {} //This prevents others from using the default '()' initializer for this class.
+}
+```
+
+[Right Way to Write a Singleton](https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
 ## Procedural Programming
 🤓
