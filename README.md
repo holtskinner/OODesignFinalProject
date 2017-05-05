@@ -14,7 +14,7 @@ Swift
 > Computer Science is about as close to magic you can get, if you're smart enough.  
 > ~ Dale Musser
 
-## Language Purpose & Origins
+## Language Purpose & Origins 📚
 🤓
 
 ### Java
@@ -60,7 +60,7 @@ Similar to Java, Swift's primarily goal was to greatly simplify the software eng
 print("Hello World!")
 ```
 
-## Unique Features
+## Unique Features 🦄
 🤓
 
 ### Java
@@ -106,7 +106,7 @@ if let name = optionalName {
 
 Many of the other features of Swift are modeled after popular programming languages. [10 features Apple 'stole' for Swift](http://www.infoworld.com/article/2606431/application-development/155797-10-prominent-features-stolen-by-Apple-s-Swift-and-where-they-came-fro.html)
 
-## Reflection
+## Reflection ⚗️
 🤓
 
 [Background Information](http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful)
@@ -127,7 +127,7 @@ Class dogClass = Dog.class;
 As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in the Swift Standard Library provides some of the functionality. [^8] Other libraries have been created to imitate this functionality, and some "hacks" can be made to work with Objective-C backwards compatability.
 [StackOverflow](http://stackoverflow.com/questions/24060667/does-swift-support-reflection)
 
-## Memory Management
+## Memory Management 🗑
 🤓
 
 ### Java
@@ -170,7 +170,7 @@ On a high level, Swift's method of memory management keeps a count of the differ
 
 [^10]
 
-## Comparison of Values and References
+## Comparison of Values and References 👾
 🤓
 
 ### Java
@@ -218,7 +218,7 @@ println("\(x.data), \(y.data)")	// prints "42, 42"
 ```
 [^11]
 
-## Null/nil References
+## Null/nil References ⛔️
 🤓
 
 A null pointer (or reference) is a special value indicating that the pointer doesn't refer to an object. [^12]
@@ -236,7 +236,7 @@ var x: Int = nil // This is invalid
 var y: Int? = nil // This is valid
 ```
 
-## Singleton
+## Singleton :shipit:
 🤓
 
 ### Java
@@ -274,14 +274,14 @@ class TheOneAndOnlyKraken {
 
 [Right Way to Write a Singleton](https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
-## [Procedural Programming] (https://en.wikipedia.org/wiki/Procedural_programming)
+## [Procedural Programming] (https://en.wikipedia.org/wiki/Procedural_programming) 🔑
 🤓
 
 [OO Verus Procedural](https://softwareengineering.stackexchange.com/a/61216)
 
 Java was written from the ground up to be a fully Object-Oriented Language. It is possible to write procedural code by putting everything in the `main` class, but it is not what Java was intended to do. Also, it is not *true* proceduaral programming, because Java requires everything to be inside a class. 😒
 
-Swift natively supports Object-Oriented AND proceduaral programming paradigms. Classes & Protocols are intended to be optional (pun intended), not required.
+Swift natively supports Object-Oriented AND proceduaral programming paradigms. Classes & Protocols are intended to be optional (pun intended), not required. [^14]
 
 ![Why Not Both](https://img.memesuper.com/200de1d4ef6baaccc1cb515779c2faf6_-meme-why-not-both-meme-why-not-both_419-261.jpeg)
 
@@ -290,13 +290,31 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 ## Functional Programming
 ♿️
 
-## Threads
+## Threads 🕸
 🤓
+
+A thread of execution is the smallest sequence of programmed instructions that can be scheduled. Multi-threaded applications allow for multiple instructions to be scheduled independently. (With some reservations) [^15]
 
 ### Java
 
-`Platform.runLater();`
+In Java, threads can be created in one of two ways:
 
+1. Implementing the Runnable interface `java.lang.Runnable`
+
+In this strategy, the `run()` method in the interface must be defined inside the class. This method contains the code that will be run concurrently.
+
+2. Extending the Thread class `java.lang.Thread`
+
+This strategy is similar, however the default `run()` method must be overriden with a user-defined method. Extending is much more limiting than Implementing because Java only allows single-inheritance.
+
+To start a thread of execution, the `start()` method is called on the thread object, which invokes `run()`.
+
+Unfortunately, User Interface Frameworks are not thread-safe. If a programmer wants to use threads with a UI, thread code must NOT directly manipulate the UI objects. Java's solution is to place all thread code that must manipulatre the UI in the `Platform.runLater()` method. This code will run later, as in when the thread is complete.
+
+### Swift
+
+To simplify the process, programmer Josh Smith took advantage of Swift's ability to define custom operators and created a custom thread operator `~>`.
+[Swift Custom Thread Operator](https://ijoshsmith.com/2014/07/05/custom-threading-operator-in-swift/)
 # Sources
 
 [^1]: https://en.wikibooks.org/wiki/Java_Programming/History
@@ -322,6 +340,10 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 [^11]: https://developer.apple.com/swift/blog/?id=10
 
 [^12]: https://en.wikipedia.org/wiki/Null_pointer
+
+[^14]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
+
+[^15]: https://en.wikipedia.org/wiki/Thread_(computing)
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
