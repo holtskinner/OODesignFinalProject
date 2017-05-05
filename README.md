@@ -274,8 +274,18 @@ class TheOneAndOnlyKraken {
 
 [Right Way to Write a Singleton](https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
-## Procedural Programming
+## [Procedural Programming] (https://en.wikipedia.org/wiki/Procedural_programming)
 🤓
+
+[OO Verus Procedural](https://softwareengineering.stackexchange.com/a/61216)
+
+Java was written from the ground up to be a fully Object-Oriented Language. It is possible to write procedural code by putting everything in the `main` class, but it is not what Java was intended to do. Also, it is not *true* proceduaral programming, because Java requires everything to be inside a class. 😒
+
+Swift natively supports Object-Oriented AND proceduaral programming paradigms. Classes & Protocols are intended to be optional (pun intended), not required.
+
+![Why Not Both](https://img.memesuper.com/200de1d4ef6baaccc1cb515779c2faf6_-meme-why-not-both-meme-why-not-both_419-261.jpeg)
+
+[More information on design patterns in Swift] (https://github.com/ochococo/Design-Patterns-In-Swift)
 
 ## Functional Programming
 ♿️
@@ -287,7 +297,7 @@ class TheOneAndOnlyKraken {
 
 `Platform.runLater();`
 
-## Sources
+# Sources
 
 [^1]: https://en.wikibooks.org/wiki/Java_Programming/History
 
