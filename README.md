@@ -313,6 +313,27 @@ Unfortunately, User Interface Frameworks are not thread-safe. If a programmer wa
 
 ### Swift
 
+There are also a multitude of way to create threads in Swift. The original way was based off the way Objective-C handled threads.
+
+[Thread API Reference](https://developer.apple.com/reference/foundation/thread#symbols)
+
+The more modern way is using the Grand Central Dispatch.
+
+[Concurrent Programming With GCD in Swift 3 - Apple WWDC 2016](https://www.youtube.com/watch?v=zfCZTnEZ6Dw)
+
+The GCD works by the programmer creating a dispatch queue, thene executing elements in FIFO order. The `.async` method executes work on the queue asyncronously. This code below moves execution from the main thread to the dispatch queue.
+
+```swift
+let queue = DispatchQueue(label: "com.example.imagetransform")
+
+queue.async {
+    let smallImage = image.resize(to: rect)
+
+    DispatchQueue.main.async {
+        imageView.image = smallImage
+    }
+}
+```
 To simplify the process, programmer Josh Smith took advantage of Swift's ability to define custom operators and created a custom thread operator `~>`.
 [Swift Custom Thread Operator](https://ijoshsmith.com/2014/07/05/custom-threading-operator-in-swift/)
 # Sources
