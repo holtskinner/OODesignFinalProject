@@ -334,8 +334,11 @@ queue.async {
     }
 }
 ```
+
 To simplify the process, programmer Josh Smith took advantage of Swift's ability to define custom operators and created a custom thread operator `~>`.
+
 [Swift Custom Thread Operator](https://ijoshsmith.com/2014/07/05/custom-threading-operator-in-swift/)
+
 # Sources
 
 [^1]: https://en.wikibooks.org/wiki/Java_Programming/History
