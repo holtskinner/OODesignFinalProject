@@ -20,12 +20,12 @@
 
 ### Comparison Criteria
 
-- [ ] Language purpose/genesis 🤓
+- [x] Language purpose/genesis 🤓
   * Why was the language created?
   * What problems was the language trying to address?
   * Is the language a reaction to a previous language or a replacement for another language?
   
-- [ ] Unique features of the language 🤓
+- [x] Unique features of the language 🤓
   * Does the language have any particularly unique features?
 
 - [ ] Name spaces ♿️
@@ -58,20 +58,20 @@
 
 - [ ] Inheritance / extension ♿️
 
-- [ ] Reflection 🤓
+- [x] Reflection 🤓
   * What reflection abilities are supported?
   * How is reflection used?
 
-- [ ] Memory management 🤓
+- [x] Memory management 🤓
   * How is it handled?
   * How does it work?
   * Garbage collection?
   * Automatic reference counting?
 
-- [ ] Comparisons of references and values 🤓
+- [x] Comparisons of references and values 🤓
   * How are values compared? (i.e. comparing two strings)
 
-- [ ] Null/nil references 🤓
+- [x] Null/nil references 🤓
   * Which does the language use? (null/nil/etc)
   * Does the language have features for handling null/nil references?
 
@@ -79,18 +79,18 @@
 
 - [ ] Implementation of listeners and event handlers ♿️
 
-- [ ] Singleton 🤓
+- [x] Singleton 🤓
   * How is a singleton implemented?
   * Can it be made thread-safe?
   * Can the singleton instance be lazily instantiated?
 
-- [ ] Procedural programming 🤓
+- [x] Procedural programming 🤓
   * Does the language support procedural programming?
 
 - [ ] Functional programming ♿️
   * Does the language support functional programming?
   * Lambda expressions, closures, or functions as types
 
-- [ ] Multithreading 🤓
+- [x] Multithreading 🤓
   * Threads or thread-like abilities
   * How is multitasking accomplished?
