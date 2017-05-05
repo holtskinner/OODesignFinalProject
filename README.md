@@ -134,38 +134,107 @@ As of Swift 3, reflection is not natively supported. 😔 The Mirror Class in th
 
 [Garbage Collection Description](https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/)
 
-Java's method of managing unused memory is called "Garbage Collection." The basic idea is the Garbage Collector keeps track of the amount of references for each object. When the last reference to an object is unused, the garbage collector frees the memory.
+Java's method of managing unused memory is called "Garbage Collection." The basic idea is the Garbage Collector keeps track of the amount of references for each object. When the last reference to an object is unreferenced, the garbage collector frees the memory. 
 
+Objects can be unreferenced by :
+
+1. Setting the object to null.
+
+```java
+Dog dog = new Dog(); // 🐶
+dog = null;
+```
+
+2. Assigning a reference to another object.
+
+```java
+Cat cat1 = new Cat(); // 😺
+Cat cat2 = new Cat();
+
+cat1 = cat2;
+// The object referrenced by cat1 can be garbage collected.
+```
+3. Creating an annonymous object.
+
+```java
+new Tiger(); // 🐯
+```
+
+The `finalize()` method on the Object class is called before the object is garbage collected. [^9]
 
 ### Swift
 
-Auto Reference Counting
+Automatic Reference Counting
 
+On a high level, Swift's method of memory management keeps a count of the different references to an object. When the count hits 0, the memory is deallocated.
 
+[^10]
 
 ## Comparison of Values and References
 🤓
 
 ### Java
 
-`==` compares if two objects are the same. `.equals()` compares value
+`==` compares if two variables referecne the same object. `.equals()` compares the value inside an object.
 
+```java
+String string1 = "Holt"
+String string2 = string1;
+String string3 = "Holt"
 
+if (string1 == string2) {
+    // This if will run.
+}
+
+if (string1 == string3) {
+    // This if will not run.
+}
+
+if (string1.equals(string3)) {
+    // This if will run.
+}
+```
 
 ### Swift
 
-`==` can be redefined to compare values.
+`==` compares value types. (`Int`, `Array`, `String`, etc).
+`===` compares reference types. `class`
+
+Value types copy data upon assignment; reference types create a shared instance.
+
+```swift
+var a: Int = 5
+var b: = a
+a = 55
+
+print("\(a), \(b)")             // prints "55, 5"
+
+class C { var data: Int = -1 }
+var x = C()
+var y = x						// x is copied to y
+x.data = 42						// changes the instance referred to by x (and y)
+println("\(x.data), \(y.data)")	// prints "42, 42"
+
+```
+[^11]
 
 ## Null/nil References
 🤓
 
+A null pointer (or reference) is a special value indicating that the pointer doesn't refer to an object. [^12]
+
 ### Java
 
-`null`
+Null ponters are referred to by `null` and can be assigned to any object type.
 
 ### Swift
 
-`nil`
+Null pointers use the `nil` keyword and can only be assigned to Optional Types.
+
+```swift
+var x: Int = nil // This is invalid
+var y: Int? = nil // This is valid
+```
 
 ## Singleton
 🤓
@@ -202,6 +271,14 @@ Auto Reference Counting
 [^7]: https://itunes.apple.com/us/book/the-swift-programming-language-swift-3-1/id881256329?mt=11
 
 [^8]: https://developer.apple.com/reference/swift/mirror
+
+[^9]: https://www.javatpoint.com/Garbage-Collection
+
+[^10]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
+
+[^11]: https://developer.apple.com/swift/blog/?id=10
+
+[^12]: https://en.wikipedia.org/wiki/Null_pointer
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
