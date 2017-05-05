@@ -53,7 +53,7 @@ Similar to Java, Swift's primarily goal was to greatly simplify the software eng
 - Null pointer exceptions are not possible via the use of optionals (see below)
 - C-style enumeration `for (int i = 0; i < size; i++)` is not allowed. [^5]
 
-> A Simple "Hello World" program in Swift.
+> A Simple "Hello World" program in Swift.  
 > Notice how this program is 14 characters fewer than the Java example.
 
 ```swift
@@ -166,9 +166,7 @@ The `finalize()` method on the Object class is called before the object is garba
 
 Automatic Reference Counting
 
-On a high level, Swift's method of memory management keeps a count of the different references to an object. When the count hits 0, the memory is deallocated.
-
-[^10]
+On a high level, Swift's method of memory management keeps a count of the different references to an object. When the count hits 0, the memory is deallocated. [^10]
 
 ## Comparison of Values and References 👾
 🤓
@@ -197,10 +195,10 @@ if (string1.equals(string3)) {
 
 ### Swift
 
-`==` compares value types. (`Int`, `Array`, `String`, etc).
-`===` compares reference types. `class`
+`==` compares value types to see if the values contained in the type are equal. (`Int`, `Array`, `String`, etc).
+`===` compares reference types to see if to variables reference the same object. `class`
 
-Value types copy data upon assignment; reference types create a shared instance.
+Value types copy data upon assignment; reference types create a shared instance. [^11]
 
 ```swift
 var a: Int = 5
@@ -216,12 +214,12 @@ x.data = 42						// changes the instance referred to by x (and y)
 println("\(x.data), \(y.data)")	// prints "42, 42"
 
 ```
-[^11]
+
 
 ## Null/nil References ⛔️
 🤓
 
-A null pointer (or reference) is a special value indicating that the pointer doesn't refer to an object. [^12]
+A null pointer (or reference) is a special value indicating that the pointer doesn't refer to a valid object. [^12]
 
 ### Java
 
@@ -257,9 +255,9 @@ public class Something {
 }
 ```
 
-[Initialization-on-demand holder idiom] (https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom)
+[Initialization-on-demand holder idiom](https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom)
 
-[Crazy Bob Lee] (http://blog.crazybob.org/2007/01/lazy-loading-singletons.html)
+[Crazy Bob Lee](http://blog.crazybob.org/2007/01/lazy-loading-singletons.html)
 
 ### Swift
 
@@ -274,7 +272,7 @@ class TheOneAndOnlyKraken {
 
 [Right Way to Write a Singleton](https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
-## [Procedural Programming] (https://en.wikipedia.org/wiki/Procedural_programming) 🔑
+## [Procedural Programming](https://en.wikipedia.org/wiki/Procedural_programming) 🔑
 🤓
 
 [OO Verus Procedural](https://softwareengineering.stackexchange.com/a/61216)
@@ -285,7 +283,7 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 
 ![Why Not Both](https://img.memesuper.com/200de1d4ef6baaccc1cb515779c2faf6_-meme-why-not-both-meme-why-not-both_419-261.jpeg)
 
-[More information on design patterns in Swift] (https://github.com/ochococo/Design-Patterns-In-Swift)
+[More information on design patterns in Swift](https://github.com/ochococo/Design-Patterns-In-Swift)
 
 ## Functional Programming
 ♿️
@@ -338,6 +336,10 @@ queue.async {
 To simplify the process, programmer Josh Smith took advantage of Swift's ability to define custom operators and created a custom thread operator `~>`.
 
 [Swift Custom Thread Operator](https://ijoshsmith.com/2014/07/05/custom-threading-operator-in-swift/)
+
+# Summary
+
+When viewed from an analytical perspective, it becomes clear that Java and Swift are products of different times in the history of programming. [19 years, 10 days apart to be exact.](http://www.convertunits.com/dates/from/May+23,+1995/to/Jun+2,+2014) Java was created at a time when Object-Oriented Programming was seen as a light at the end of the tunnel from the spaghetti code 🍝 days of C and C++. However, more recent scholars of programming languages have realized that pure OO is not the most efficient design pattern. [Even the creator of Java admits the shortcomings!](http://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html) Swift came in to save the day by allowing the option of multiple design patterns. (OO, Procedural, Functional, Protocol-Oriented) This Multi-Paradigm Programming approach appears to be the direction the world of software engineering is heading.
 
 # Sources
 
