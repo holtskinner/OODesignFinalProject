@@ -105,7 +105,8 @@ if let name = optionalName {
 ```
 
 Many of the other features of Swift are modeled after popular programming languages. [10 features Apple 'stole' for Swift](http://www.infoworld.com/article/2606431/application-development/155797-10-prominent-features-stolen-by-Apple-s-Swift-and-where-they-came-fro.html)
-## Namespaces 
+
+## Namespaces ☂️
 ♿️
 
 ### Java
@@ -123,7 +124,7 @@ In Swift Namespace's are called Modules. A module is a single unit of code distr
 ```swift
 import UIKit
 ```
-## Types
+## Types 🕶
 ♿️
 
 ### Java
@@ -150,8 +151,8 @@ int x = 42;
 int y = x;
 
 //pass-by-reference
-Dog myDog = new Dog("Max"); 🐕 😃
-Dog yourDog = myDog; 🐕 😢
+Dog myDog = new Dog("Max"); // 🐕 😃
+Dog yourDog = myDog; // 🐕 😢
 ```
 
 ### Swift
@@ -160,7 +161,7 @@ Swift also has a couple of unique type features Type Inference, Type Safety and 
 
 ```swift
 //Type Inference
-let 😃 = "Smilley face"
+let 😃 = "Smiley face"
 let num = 42
 
  //Type aliases
@@ -170,8 +171,8 @@ var maxAmplitudeFound = AudioSample.min
 
 //Booleans
 
-let orangesAreOrange = true 🍊 = 🍊
-let orangeAreApples = false 🍊 ≠ 🍎
+let orangesAreOrange = true // 🍊 = 🍊
+let orangeAreApples = false // 🍊 ≠ 🍎
  
  //Optionals
 
@@ -183,25 +184,27 @@ let orangeAreApples = false 🍊 ≠ 🍎
      //this line will only print if myDog doesnt = nil
      print("You stole my dog!") 😡 🐕
  }
- //Type Saftey
+
+  // Type Saftey
   var myDog = Dog()
-  myDog = "cat"//It will fail at run time 😿
+  myDog = "cat" //It will fail at run time 😿
 ```
-## Classes
+## Classes 🎓
 ♿️
  ### Java
  In Java a class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.[^20] When creating new object the keyword **new** is used followed by a call to a constructor. This call initializes the new object. Java has a garbage collecter and you cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent of a destructor.[^21]
  ``` java
  //decalring a new object
- Turtle tt = new Turtle();🐢
+ Turtle tt = new Turtle(); // 🐢
 
- //At some point Garbage collection will happen🤔
+ //At some point Garbage collection will happen 🤔
  tt = null;
 ```
 
  ### Swift
- Classes and structures are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your classes and structures by using exactly the same syntax as for constants, variables, and functions. Unlike Java, Swift uses the keyword **init** to initalize a new object. In Swift a deinitializer is called immediately before a class instance is deallocated. You write deinitializers with the **deinit** keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types. [^22]
- ```  swift
+ Classes and structures are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your classes and structures by using exactly the same syntax as for constants, variables, and functions. Unlike Java, Swift uses the keyword ``init`` to initalize a new object. In Swift a deinitializer is called immediately before a class instance is deallocated. You write deinitializers with the ``deinit`` keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types. [^22]
+ 
+ ```swift
 
  //Initialization 
  struct Fahrenheit {
@@ -210,13 +213,14 @@ let orangeAreApples = false 🍊 ≠ 🍎
         temperature = 32.0
     }
 }
+
 var f = Fahrenheit()
 print("The default temperature is \(f.temperature)° Fahrenheit")
 // Prints "The default temperature is 32.0° Fahrenheit"
 
 //Deinitialization
 
-deinit{
+deinit {
     Fahrenheit.temperature
 }
 ```
@@ -226,7 +230,7 @@ deinit{
 ### Java
 Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.[^23]
 
-``` java
+```java
 //use of this keyword in the constructor
     public Point(int x, int y) {
         this.x = x;
@@ -247,13 +251,14 @@ func increment() {
 ♿️
 ### Java
 In Java setter are used to set a new field and a getter is used to get a private field. Unfortunately in java setters and getters have to written by the programmer but most IDE's can auto generate them. Java required the use of backing variables for setters and getters.
+
 ```java
 private String name;
 
-public void setName(String name){
+public void setName(String name) {
     this.name = name;
 }
-public String getName(){
+public String getName() {
     return name;
 }
 ```
@@ -263,13 +268,15 @@ public String getName(){
 ##  Interfaces / Protocols
  ♿️
 
- ### Java
+### Java
 An interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods. [^25]
- ```java 
- public class Turtle implements Animal{
+
+```java 
+ public class Turtle implements Animal {
      //Animals methods and unique Turtle methods
  }
  ```
+
  ### Swift
  A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol. [^26]
 
@@ -357,9 +364,9 @@ On a high level, Swift's method of memory management keeps a count of the differ
 `==` compares if two variables referecne the same object. `.equals()` compares the value inside an object.
 
 ```java
-String string1 = "Holt"
+String string1 = "Dale"
 String string2 = string1;
-String string3 = "Holt"
+String string3 = "Dale"
 
 if (string1 == string2) {
     // This if will run.
@@ -418,14 +425,15 @@ var y: Int? = nil // This is valid
 
  ### Java
  An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled. Errors − These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation. [^27] A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
-  ``` java 
-  try {
+
+``` java 
+try {
    // Protected code
-}catch(ExceptionType1 e1) {
+} catch(ExceptionType1 e1) {
    // Catch block
-}catch(ExceptionType2 e2) {
+} catch(ExceptionType2 e2) {
    // Catch block
-}catch(ExceptionType3 e3) {
+} catch(ExceptionType3 e3) {
    // Catch block
 }
 ```
