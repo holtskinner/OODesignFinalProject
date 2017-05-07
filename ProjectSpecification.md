@@ -75,7 +75,7 @@
   * Which does the language use? (null/nil/etc)
   * Does the language have features for handling null/nil references?
 
-- [ ] Errors and exception handling ♿️
+- [x] Errors and exception handling ♿️
 
 - [ ] Implementation of listeners and event handlers ♿️
 

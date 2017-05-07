@@ -417,8 +417,59 @@ var y: Int? = nil // This is valid
  ♿️
 
  ### Java
+ An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled. Errors − These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation. [^27] A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+  ``` java 
+  try {
+   // Protected code
+}catch(ExceptionType1 e1) {
+   // Catch block
+}catch(ExceptionType2 e2) {
+   // Catch block
+}catch(ExceptionType3 e3) {
+   // Catch block
+}
+```
 
  ### Swift
+ There are four ways to handle errors in Swift. You can propagate the error from a function to the code that calls that function, handle the error using a do-catch statement, handle the error as an optional value, or assert that the error will not occur. [^28]
+
+ > Propagating Errors Using Throwing Functions
+ ``` swift
+ func canThrowErrors() throws -> String
+ 
+ func cannotThrowErrors() -> String
+ ```
+ > Handling the error using a do-catch statement
+ ``` swift
+ do {
+    try expression
+    statements
+} catch pattern 1 {
+    statements
+} catch pattern 2 where condition {
+    statements
+}
+```
+> Handling the error as an optional value
+```swift
+func someThrowingFunction() throws -> Int {
+    // ...
+}
+ 
+let x = try? someThrowingFunction()
+ 
+let y: Int?
+do {
+    y = try someThrowingFunction()
+} catch {
+    y = nil
+}
+```
+> Asserting that the error will not occur
+```swift
+let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
+```
+
 
 ##  Implementation of listeners and event handlers
  ♿️
@@ -583,3 +634,5 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [^24]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html
 [^25]: https://www.tutorialspoint.com/java/java_interfaces.htm
 [^26]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
+[^27]: https://www.tutorialspoint.com/java/java_exceptions.htm
+[^28]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html
