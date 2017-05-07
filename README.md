@@ -105,6 +105,24 @@ if let name = optionalName {
 ```
 
 Many of the other features of Swift are modeled after popular programming languages. [10 features Apple 'stole' for Swift](http://www.infoworld.com/article/2606431/application-development/155797-10-prominent-features-stolen-by-Apple-s-Swift-and-where-they-came-fro.html)
+## Namespaces 
+♿️
+
+### Java
+In Java Namespace's are called packages. 📦  Packages serve to group related classes and define a namespace for the classes they contain. [^16] A class in a package can refer to any other class in the package by the simple name of the class. Packages are implemented by the keyword import.
+```java
+import java.io.File;//this imports the File class within the java.io package
+```
+```java
+import java.io.*;//this imports all the classes within the java.io package
+```
+
+### Swift
+In Swift Namespace's are called Modules. A module is a single unit of code distribution — a framework or application that is built and shipped as a single unit and that can be imported by another module.[^17] Just like Java, Swift used the keyword import to implement a Module.
+
+```swift
+import UIKit
+```
 
 ## Reflection 🔮
 🤓
@@ -373,3 +391,7 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
 [Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
+
+[^16]: https://www.cs.ait.ac.th/~on/O/oreilly/java-ent/jnut/ch02_11.htm
+
+[^17]: https://andybargh.com/lifetime-scope-and-namespaces-in-swift/#Modules
