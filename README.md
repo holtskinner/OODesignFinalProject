@@ -123,6 +123,102 @@ In Swift Namespace's are called Modules. A module is a single unit of code distr
 ```swift
 import UIKit
 ```
+## Types
+♿️
+
+### Java
+Java supports reference types and 8 primitive types. int, double, float, long, short, boolean, byte, and char.[^18] Java has the ability to pass by value and pass by reference. Java also has the ability to create new object types.  
+```java
+//the 8 primitive types 
+int i = 2147483647;
+double d = 1.7976931348623157E308;
+float f = 3.4028235E38;
+long l = 9,223,372,036,854,775,807;
+short s = 32,767;
+boolean b = false;
+byte bte = 127;
+char c = 'c';
+
+//Some reference types
+String s = "Dale";
+Scanner scan = new Scanner();
+Random rnd = new Random();
+Integer num = new Integer();
+
+//pass-by-value
+int x = 42;
+int y = x;
+
+//pass-by-reference
+Dog myDog = new Dog("Max"); 🐕 😃
+Dog yourDog = myDog; 🐕 😢
+```
+
+### Swift
+Swift offers the programmer a rich assortment of built-in as well as user-defined data types. Some of them are Int8, UInt8, Int32, UInt32, Int64, UInt64, Float, Double, Bool, String, Character, Optional.[^19] Int's and UInt's can be repesented in 8 Bit, 16 Bit, 32 Bit, and 64 Bit forms. UInt's are unsigned integers while Int's are signed integers. In Swift you can pass-by-value and pass-by-reference. Swift also has the ability to create new value types.
+Swift also has a couple of unique type features Type Inference, Type Safety and Type Aliases. First, Type Inference which enables the compiler to deduct the type of a particular expression automatically when it compiles your code. Second, Type Saftey performs type-checks when compiling your code and flags any mismatched types as errors. Last, Type Aliases is where you can create a new name for an existing type.
+
+```swift
+//Type Inference
+let 😃 = "Smilley face"
+let num = 42
+
+ //Type aliases
+typealias AudioSample = UInt16
+
+var maxAmplitudeFound = AudioSample.min
+
+//Booleans
+
+let orangesAreOrange = true 🍊 = 🍊
+let orangeAreApples = false 🍊 ≠ 🍎
+ 
+ //Optionals
+
+ var myDog: Dog? = Dog()
+
+ //unwrapping optional
+
+ if let yourDog = myDog {
+     //this line will only print if myDog doesnt = nil
+     print("You stole my dog!") 😡 🐕
+ }
+ //Type Saftey
+  var myDog = Dog()
+  myDog = "cat"//It will fail at run time 😿
+```
+## Classes
+♿️
+ ### Java
+
+ ### Swift
+
+## Instance reference
+♿️
+### Java
+
+### Swift
+
+## Properties
+♿️
+### Java
+
+### Swift
+
+##  Interfaces / Protocols
+ ♿️
+
+ ### Java
+
+ ### Swift
+
+ ##  Inheritance / Extension
+ ♿️
+
+ ### Java
+
+ ### Swift
+
 
 ## Reflection 🔮
 🤓
@@ -250,6 +346,19 @@ Null pointers use the `nil` keyword and can only be assigned to Optional Types.
 var x: Int = nil // This is invalid
 var y: Int? = nil // This is valid
 ```
+ ##  Errors and exception handling
+ ♿️
+
+ ### Java
+
+ ### Swift
+
+##  Implementation of listeners and event handlers
+ ♿️
+
+ ### Java
+
+ ### Swift
 
 ## Singleton :squirrel:
 🤓
@@ -304,6 +413,10 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 
 ## Functional Programming ⚗️
 ♿️
+
+### Java
+
+### Swift
 
 ## Threads 🕸
 🤓
