@@ -181,8 +181,8 @@ let orangeAreApples = false // 🍊 ≠ 🍎
  //unwrapping optional
 
  if let yourDog = myDog {
-     //this line will only print if myDog doesnt = nil
-     print("You stole my dog!") 😡 🐕
+     //this line will only print if myDog doesn't = nil
+     print("You stole my dog!") // 😡 🐕
  }
 
   // Type Saftey
@@ -194,10 +194,10 @@ let orangeAreApples = false // 🍊 ≠ 🍎
  ### Java
  In Java a class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.[^20] When creating new object the keyword **new** is used followed by a call to a constructor. This call initializes the new object. Java has a garbage collecter and you cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent of a destructor.[^21]
  ``` java
- //decalring a new object
+ // declaring a new object
  Turtle tt = new Turtle(); // 🐢
 
- //At some point Garbage collection will happen 🤔
+ // At some point Garbage collection will happen 🤔
  tt = null;
 ```
 
@@ -206,8 +206,8 @@ let orangeAreApples = false // 🍊 ≠ 🍎
  
  ```swift
 
- //Initialization 
- struct Fahrenheit {
+//Initialization
+struct Fahrenheit {
     var temperature: Double
     init() {
         temperature = 32.0
@@ -219,19 +219,18 @@ print("The default temperature is \(f.temperature)° Fahrenheit")
 // Prints "The default temperature is 32.0° Fahrenheit"
 
 //Deinitialization
-
 deinit {
     Fahrenheit.temperature
 }
 ```
 
-## Instance reference
+## Instance Reference
 ♿️
 ### Java
-Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.[^23]
+Within an instance method or a constructor, `this` is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using `this`. [^23]
 
 ```java
-//use of this keyword in the constructor
+//use of "this" keyword in the constructor
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
@@ -239,7 +238,7 @@ Within an instance method or a constructor, this is a reference to the current o
 ```
 
 ### Swift
-Every instance of a type has an implicit property called self, which is exactly equivalent to the instance itself. You use the self property to refer to the current instance within its own instance methods. [^24]
+Every instance of a type has an implicit property called `self`, which is exactly equivalent to the instance itself. You use the `self` property to refer to the current instance within its own instance methods. [^24]
 
 ``` swift
 func increment() {
@@ -247,8 +246,9 @@ func increment() {
 }
 ```
 
-## Properties
+## Properties 🍩  
 ♿️
+
 ### Java
 In Java setter are used to set a new field and a getter is used to get a private field. Unfortunately in java setters and getters have to written by the programmer but most IDE's can auto generate them. Java required the use of backing variables for setters and getters.
 
@@ -265,8 +265,8 @@ public String getName() {
 
 ### Swift
 
-##  Interfaces / Protocols
- ♿️
+##  Interfaces / Protocols 📲  
+♿️
 
 ### Java
 An interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods. [^25]
@@ -286,7 +286,7 @@ An interface is a reference type in Java. It is similar to class. It is a collec
 }
 ```
 
- ##  Inheritance / Extension
+ ##  Inheritance / Extension 👨‍👩‍👧‍👦
  ♿️
 
  ### Java
@@ -420,11 +420,13 @@ Null pointers use the `nil` keyword and can only be assigned to Optional Types.
 var x: Int = nil // This is invalid
 var y: Int? = nil // This is valid
 ```
- ##  Errors and exception handling
+ ##  Errors and Exception Handling 🚫
  ♿️
 
  ### Java
- An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled. Errors − These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation. [^27] A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+ An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled. 
+
+ Errors − These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation. [^27] A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
 
 ``` java 
 try {
@@ -478,8 +480,7 @@ do {
 let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
 ```
 
-
-##  Implementation of listeners and event handlers
+## Implementation of Listeners and Event Handlers 👂
  ♿️
 
  ### Java
@@ -524,7 +525,7 @@ class TheOneAndOnlyKraken {
 
 [Right Way to Write a Singleton](https://krakendev.io/blog/the-right-way-to-write-a-singleton)
 
-## [Procedural Programming](https://en.wikipedia.org/wiki/Procedural_programming) 🔑
+## [Procedural Programming](https://en.wikipedia.org/wiki/Procedural_programming) 🔑  
 🤓
 
 [OO Verus Procedural](https://softwareengineering.stackexchange.com/a/61216)
@@ -599,6 +600,10 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 
 # Sources
 
+[Java Documentation](https://docs.oracle.com/javase/8/)
+
+[Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
+
 [^1]: https://en.wikibooks.org/wiki/Java_Programming/History
 
 [^2]: http://www.javaworld.com/article/2077265/core-java/so-why-did-they-decide-to-call-it-java-.html
@@ -626,10 +631,6 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [^14]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
 
 [^15]: https://en.wikipedia.org/wiki/Thread_(computing)
-
-[Java Documentation](https://docs.oracle.com/javase/8/)
-
-[Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)
 
 [^16]: https://www.cs.ait.ac.th/~on/O/oreilly/java-ent/jnut/ch02_11.htm
 
