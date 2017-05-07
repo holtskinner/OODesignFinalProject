@@ -37,13 +37,13 @@
     * Are both reference and value types supported?
     * Can new value types be created?
 
-- [ ] Classes ♿️
+- [x] Classes ♿️
   * Defining
   * Creating new instances
   * Constructing/initializing
   * Destructing/de-initializing
 
-- [ ] Instance reference name in data type (class) ♿️
+- [x] Instance reference name in data type (class) ♿️
   * this?  self?
 
 - [ ] Properties ♿️
@@ -51,7 +51,7 @@
   * Backing variables?
   * Computed properties?
 
-- [ ] Interfaces / protocols ♿️
+- [x] Interfaces / protocols ♿️
   * What does the language support?
   * What abilities does it have?
   * How is it used?

@@ -190,18 +190,73 @@ let orangeAreApples = false 🍊 ≠ 🍎
 ## Classes
 ♿️
  ### Java
+ In Java a class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.[^20] When creating new object the keyword **new** is used followed by a call to a constructor. This call initializes the new object. Java has a garbage collecter and you cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent of a destructor.[^21]
+ ``` java
+ //decalring a new object
+ Turtle tt = new Turtle();🐢
+
+ //At some point Garbage collection will happen🤔
+ tt = null;
+```
 
  ### Swift
+ Classes and structures are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your classes and structures by using exactly the same syntax as for constants, variables, and functions. Unlike Java, Swift uses the keyword **init** to initalize a new object. In Swift a deinitializer is called immediately before a class instance is deallocated. You write deinitializers with the **deinit** keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types. [^22]
+ ```  swift
+
+ //Initialization 
+ struct Fahrenheit {
+    var temperature: Double
+    init() {
+        temperature = 32.0
+    }
+}
+var f = Fahrenheit()
+print("The default temperature is \(f.temperature)° Fahrenheit")
+// Prints "The default temperature is 32.0° Fahrenheit"
+
+//Deinitialization
+
+deinit{
+    Fahrenheit.temperature
+}
+```
 
 ## Instance reference
 ♿️
 ### Java
+Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.[^23]
+
+``` java
+//use of this keyword in the constructor
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+```
 
 ### Swift
+Every instance of a type has an implicit property called self, which is exactly equivalent to the instance itself. You use the self property to refer to the current instance within its own instance methods. [^24]
+
+``` swift
+func increment() {
+    self.count += 1
+}
+```
 
 ## Properties
 ♿️
 ### Java
+In Java setter are used to set a new field and a getter is used to get a private field. Unfortunately in java setters and getters have to written by the programmer but most IDE's can auto generate them. Java required the use of backing variables for setters and getters.
+```java
+private String name;
+
+public void setName(String name){
+    this.name = name;
+}
+public String getName(){
+    return name;
+}
+```
 
 ### Swift
 
@@ -209,8 +264,20 @@ let orangeAreApples = false 🍊 ≠ 🍎
  ♿️
 
  ### Java
-
+An interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods. [^25]
+ ```java 
+ public class Turtle implements Animal{
+     //Animals methods and unique Turtle methods
+ }
+ ```
  ### Swift
+ A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol. [^26]
+
+ ``` swift
+ class SomeClass: SomeSuperclass, FirstProtocol, AnotherProtocol {
+    // class definition goes here
+}
+```
 
  ##  Inheritance / Extension
  ♿️
@@ -508,3 +575,11 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [^16]: https://www.cs.ait.ac.th/~on/O/oreilly/java-ent/jnut/ch02_11.htm
 
 [^17]: https://andybargh.com/lifetime-scope-and-namespaces-in-swift/#Modules
+
+[^20]: https://www.tutorialspoint.com/java/java_object_classes.htm
+[^21]: http://stackoverflow.com/questions/171952/is-there-a-destructor-for-java
+[^22]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-ID142
+[^23]: https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
+[^24]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html
+[^25]: https://www.tutorialspoint.com/java/java_interfaces.htm
+[^26]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
