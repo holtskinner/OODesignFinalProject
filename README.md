@@ -224,8 +224,9 @@ deinit {
 }
 ```
 
-## Instance Reference
+## Instance Reference 🍰  
 ♿️
+
 ### Java
 Within an instance method or a constructor, `this` is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using `this`. [^23]
 
@@ -364,9 +365,9 @@ On a high level, Swift's method of memory management keeps a count of the differ
 `==` compares if two variables referecne the same object. `.equals()` compares the value inside an object.
 
 ```java
-String string1 = "Dale"
+String string1 = "Dale";
 String string2 = string1;
-String string3 = "Dale"
+String string3 = "Dale";
 
 if (string1 == string2) {
     // This if will run.
