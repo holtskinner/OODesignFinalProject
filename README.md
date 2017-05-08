@@ -112,10 +112,10 @@ Many of the other features of Swift are modeled after popular programming langua
 ### Java
 In Java Namespace's are called packages. 📦  Packages serve to group related classes and define a namespace for the classes they contain. [^16] A class in a package can refer to any other class in the package by the simple name of the class. Packages are implemented by the keyword import.
 ```java
-import java.io.File;//this imports the File class within the java.io package
+import java.io.File; // Imports the File class within the java.io package
 ```
 ```java
-import java.io.*;//this imports all the classes within the java.io package
+import java.io.*; // Imports all the classes within the java.io package
 ```
 
 ### Swift
@@ -288,9 +288,11 @@ A lazy stored property is a property whose initial value is not calculated until
 class FinalProject {
     print("Final Project Done!!)
 }
+
 class CS4330Student {
     lazy var doFinalProject = FinalProject()
 }
+
 let finalGrade = CS4330Student()
 ```
 
@@ -301,9 +303,11 @@ In addition to stored properties, classes, structures, and enumerations can defi
 struct Point {
     var x = 0.0, y = 0.0
 }
+
 struct Size {
     var width = 0.0, height = 0.0
 }
+
 struct Rect {
     var origin = Point()
     var size = Size()
@@ -322,6 +326,7 @@ struct Rect {
 
 var square = Rect(origin: Point(x: 0.0, y: 0.0),
                   size: Size(width: 10.0, height: 10.0))
+
 let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)
 
@@ -713,11 +718,14 @@ To simplify the process, programmer Josh Smith took advantage of Swift's ability
 
 [Swift Custom Thread Operator](https://ijoshsmith.com/2014/07/05/custom-threading-operator-in-swift/)
 
-# Summary
+# Summary 🥓
 
-When viewed from an analytical perspective, it becomes clear that Java and Swift are products of different times in the history of programming. [19 years, 10 days apart to be exact.](http://www.convertunits.com/dates/from/May+23,+1995/to/Jun+2,+2014) Java was created at a time when Object-Oriented Programming was seen as a light at the end of the tunnel from the spaghetti code 🍝 days of C and C++. However, more recent scholars of programming languages have realized that pure OO is not the most efficient design pattern. [Even the creator of Java admits the shortcomings!](http://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html) Swift came in to save the day by allowing the option of multiple design patterns. (OO, Procedural, Functional, Protocol-Oriented) This Multi-Paradigm Programming approach appears to be the direction the world of software engineering is heading.
+When viewed from an analytical perspective, it becomes clear that Java and Swift are products of different times in the history of computing. [19 years, 10 days apart to be exact.](http://www.convertunits.com/dates/from/May+23,+1995/to/Jun+2,+2014)
+Java was created at a time when Object-Oriented Programming was seen as a light at the end of the tunnel from the spaghetti code 🍝 days of C and C++. 
+However, more recent scholars of programming languages have realized that pure OO is not the most efficient design pattern. [Even the creator of Java admits the shortcomings!](http://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html) 
+Swift came in to save the day by allowing the option of multiple design patterns. (OO, Procedural, Functional, Protocol-Oriented) This Multi-Paradigm Programming approach appears to be the direction the world of software engineering is heading.
 
-# Sources
+# Sources 🍕
 
 [Java Documentation](https://docs.oracle.com/javase/8/)
 
