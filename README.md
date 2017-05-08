@@ -266,8 +266,10 @@ public String getName() {
 
 ### Swift
 Properties in Swift have associate values with a particular class, structure, or enumeration. Stored properties store constant and variable values as part of an instance, whereas computed properties calculate (rather than store) a value. Computed properties are provided by classes, structures, and enumerations. Stored properties are provided only by classes and structures.[^29]
+
 1. Stored Properties 
 In its simplest form, a stored property is a constant or variable that is stored as part of an instance of a particular class or structure.
+
 ```swift
 struct FixedLengthRange {
     var firstValue: Int
@@ -278,8 +280,10 @@ var rangeOfThreeItems = FixedLengthRange(firstValue: 0, length: 3)
 rangeOfThreeItems.firstValue = 6
 // the range now represents integer values 6, 7, and 8
 ```
+
 2. Lazy Stored Properties
 A lazy stored property is a property whose initial value is not calculated until the first time it is used. You indicate a lazy stored property by writing the lazy modifier before its declaration.
+
 ```swift
 class FinalProject {
     print("Final Project Done!!)
@@ -289,8 +293,10 @@ class CS4330Student {
 }
 let finalGrade = CS4330Student()
 ```
+
 3. Computed Properties
 In addition to stored properties, classes, structures, and enumerations can define computed properties, which do not actually store a value. Instead, they provide a getter and an optional setter to retrieve and set other properties and values indirectly.
+
 ```swift
 struct Point {
     var x = 0.0, y = 0.0
@@ -313,10 +319,12 @@ struct Rect {
         }
     }
 }
+
 var square = Rect(origin: Point(x: 0.0, y: 0.0),
                   size: Size(width: 10.0, height: 10.0))
 let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)
+
 print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 // Prints "square.origin is now at (10.0, 10.0)"
 ```
@@ -554,7 +562,7 @@ let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
 
  ```java
  class TigerListener implements Listener {
-    @Overrides
+    @Override
     void listen(Event event) {
         if (event instanceof GrowlEvent) {
             //handle growl...
@@ -748,16 +756,29 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [^17]: https://andybargh.com/lifetime-scope-and-namespaces-in-swift/#Modules
 
 [^20]: https://www.tutorialspoint.com/java/java_object_classes.htm
+
 [^21]: http://stackoverflow.com/questions/171952/is-there-a-destructor-for-java
+
 [^22]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-ID142
+
 [^23]: https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
+
 [^24]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html
+
 [^25]: https://www.tutorialspoint.com/java/java_interfaces.htm
+
 [^26]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
+
 [^27]: https://www.tutorialspoint.com/java/java_exceptions.htm
+
 [^28]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html
+
 [^29]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html
+
 [^30]: https://www.tutorialspoint.com/java/java_inheritance.htm
+
 [^31]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html
+
 [^32]: http://www.javaworld.com/article/2077351/java-se/events-and-listeners.html
+
 [^33]: https://developer.apple.com/reference/appkit/nsapplication/1428668-currentevent
