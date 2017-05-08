@@ -46,7 +46,7 @@
 - [x] Instance reference name in data type (class) ♿️
   * this?  self?
 
-- [ ] Properties ♿️
+- [x] Properties ♿️
   * Getters and setters...write your own or built in?
   * Backing variables?
   * Computed properties?
@@ -56,7 +56,7 @@
   * What abilities does it have?
   * How is it used?
 
-- [ ] Inheritance / extension ♿️
+- [x] Inheritance / extension ♿️
 
 - [x] Reflection 🤓
   * What reflection abilities are supported?
@@ -77,7 +77,7 @@
 
 - [x] Errors and exception handling ♿️
 
-- [ ] Implementation of listeners and event handlers ♿️
+- [x] Implementation of listeners and event handlers ♿️
 
 - [x] Singleton 🤓
   * How is a singleton implemented?
@@ -87,7 +87,7 @@
 - [x] Procedural programming 🤓
   * Does the language support procedural programming?
 
-- [ ] Functional programming ♿️
+- [x] Functional programming ♿️
   * Does the language support functional programming?
   * Lambda expressions, closures, or functions as types
 

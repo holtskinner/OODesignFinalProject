@@ -265,6 +265,61 @@ public String getName() {
 ```
 
 ### Swift
+Properties in Swift have associate values with a particular class, structure, or enumeration. Stored properties store constant and variable values as part of an instance, whereas computed properties calculate (rather than store) a value. Computed properties are provided by classes, structures, and enumerations. Stored properties are provided only by classes and structures.[^29]
+1. Stored Properties 
+In its simplest form, a stored property is a constant or variable that is stored as part of an instance of a particular class or structure.
+```swift
+struct FixedLengthRange {
+    var firstValue: Int
+    let length: Int
+}
+var rangeOfThreeItems = FixedLengthRange(firstValue: 0, length: 3)
+// the range represents integer values 0, 1, and 2
+rangeOfThreeItems.firstValue = 6
+// the range now represents integer values 6, 7, and 8
+```
+2. Lazy Stored Properties
+A lazy stored property is a property whose initial value is not calculated until the first time it is used. You indicate a lazy stored property by writing the lazy modifier before its declaration.
+```swift
+class FinalProject {
+    print("Final Project Done!!)
+}
+class CS4330Student {
+    lazy var doFinalProject = FinalProject()
+}
+let finalGrade = CS4330Student()
+```
+3. Computed Properties
+In addition to stored properties, classes, structures, and enumerations can define computed properties, which do not actually store a value. Instead, they provide a getter and an optional setter to retrieve and set other properties and values indirectly.
+```swift
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set(newCenter) {
+            origin.x = newCenter.x - (size.width / 2)
+            origin.y = newCenter.y - (size.height / 2)
+        }
+    }
+}
+var square = Rect(origin: Point(x: 0.0, y: 0.0),
+                  size: Size(width: 10.0, height: 10.0))
+let initialSquareCenter = square.center
+square.center = Point(x: 15.0, y: 15.0)
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+// Prints "square.origin is now at (10.0, 10.0)"
+```
 
 ##  Interfaces / Protocols 📲  
 ♿️
@@ -291,9 +346,19 @@ An interface is a reference type in Java. It is similar to class. It is a collec
  ♿️
 
  ### Java
-
+ Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.[^30] Java uses the the keyword extends to inherit the properties from another class.
+ ```java
+ class Turtle extends Animal {
+    //Animals methods and unique Turtle methods
+ }
+```
  ### Swift
-
+Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code (known as retroactive modeling). [^31]
+```swift
+extension SomeType: SomeProtocol, AnotherProtocol {
+    // implementation of protocol requirements goes here
+}
+```
 
 ## Reflection 🔮
 🤓
@@ -485,8 +550,28 @@ let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
  ♿️
 
  ### Java
+ In Java there are `ActionEvents`. In order to receive an ActionEvent, a listener must implement the ActionListener interface and register itself with the component. Furthermore, a component must keep track of its listeners in order to notify them of an event.[^32]
+
+ ```java
+ class TigerListener implements Listener {
+    @Overrides
+    void listen(Event event) {
+        if (event instanceof GrowlEvent) {
+            //handle growl...
+        }
+        else if (event instance of MeowEvent) {
+            //handle meow
+        }
+        
+    }
+}
+```
 
  ### Swift
+ The shared app object receives events and forwards them to the affected NSWindow objects, which then distribute them to the objects in its view hierarchy. Use this property to get the event that was last handled by the app.[^33]
+ ```swift
+ var currentEvent: NSEvent? { get }
+ ```
 
 ## Singleton :squirrel:
 🤓
@@ -543,8 +628,33 @@ Swift natively supports Object-Oriented AND proceduaral programming paradigms. C
 ♿️
 
 ### Java
+Lambda expressions are introduced in Java 8 and are touted to be the biggest feature of Java 8. Lambda expression facilitates functional programming, and simplifies the development a lot.
+```java
+public class Java8Tester {
+
+   final static String salutation = "Hello! ";
+   
+   public static void main(String args[]){
+      GreetingService greetService1 = message -> 
+      System.out.println(salutation + message);
+      greetService1.sayMessage("Mahesh");
+   }
+	
+   interface GreetingService {
+      void sayMessage(String message);
+   }
+}
+```
 
 ### Swift
+Swift has absorbed some fantastic lessons from the functional world, and while value types may not quite be the present, they are clearly the future. Rob explores how decades of work in functional languages have influenced Swift, and how you can use those features best while staying true to Swift, playing nice with Cocoa, and embracing Protocol Oriented Programming. [^33]
+```swift
+let persons = names
+    .map(Person.init)
+    .filter { $0.isValid }
+```
+
+
 
 ## Threads 🕸
 🤓
@@ -646,3 +756,8 @@ When viewed from an analytical perspective, it becomes clear that Java and Swift
 [^26]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
 [^27]: https://www.tutorialspoint.com/java/java_exceptions.htm
 [^28]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html
+[^29]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html
+[^30]: https://www.tutorialspoint.com/java/java_inheritance.htm
+[^31]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html
+[^32]: http://www.javaworld.com/article/2077351/java-se/events-and-listeners.html
+[^33]: https://developer.apple.com/reference/appkit/nsapplication/1428668-currentevent
