@@ -518,6 +518,9 @@ try {
    // Catch block
 }
 ```
+> Java's Exception Hierarchy
+
+<img src="Java Exception Hierarchy.png" alt="Exception Hierarchy" width="450">
 
  ### Swift
  There are four ways to handle errors in Swift. You can propagate the error from a function to the code that calls that function, handle the error using a do-catch statement, handle the error as an optional value, or assert that the error will not occur. [^28]
