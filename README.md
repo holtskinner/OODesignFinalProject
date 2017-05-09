@@ -762,6 +762,8 @@ Swift came in to save the day by allowing the option of multiple design patterns
 [^16]: https://www.cs.ait.ac.th/~on/O/oreilly/java-ent/jnut/ch02_11.htm
 
 [^17]: https://andybargh.com/lifetime-scope-and-namespaces-in-swift/#Modules
+[^18]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+[^19]: https://www.tutorialspoint.com/swift/swift_data_types.htm
 
 [^20]: https://www.tutorialspoint.com/java/java_object_classes.htm
 
